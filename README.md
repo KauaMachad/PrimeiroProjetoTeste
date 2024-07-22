@@ -1,4 +1,4 @@
 # PrimeiroProjetoTeste
  À medida que vou aprendendo, vou melhorando o projeto.
 
-<p><a target="_blank" href="https://kauamachad.github.io/PrimeiroProjetoTeste/arquivos/">Clique aqui</a> para ser redirecionado para o site.</p>
+<p><a href="https://kauamachad.github.io/PrimeiroProjetoTeste/arquivos/" target="_blank">Clique aqui</a> para ser redirecionado para o site.</p>
