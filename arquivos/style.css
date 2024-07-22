@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --font01: "Dancing Script", "cursive";
+    --font02: "Roboto", sans-serif;
+    --cor1: #F1F2E4;
+    --cor2: #262401;
+    --cor3: #A6978A;
+    --cor4: #401201;
+    --cor5: #260B01;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+/*Trabalhando com o documento todo*/
+body{
+    background-color: var(--cor1);
+    font-family: var(--font02);
+    text-align: justify;
+}
+/*Trabalhando com o cabeçalho*/
+header{
+    background-color: var(--cor3);
+    padding-bottom: 3%;
+}
+header > div > p{
+    font-size: 24px;
+    width: 800px;
+    margin: auto;
+}
+header > div > #logomarca{
+    float: left;
+    padding-left: 20px;
+}
+header > div > h1{
+    font-family: var(--font01);
+    font-size: 36px;
+    width: 800px;
+    padding: 40px 0px 0px 200px
+}
+/*Trabalhando com o menu*/
+nav{
+    background-color: var(--cor3);
+    padding: 0px 0px 5px 0px;
+}
+nav > a{
+    padding: 5px 15px;
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: normal;
+}
+nav > a:hover{
+    background-color: var(--cor2);
+    border-radius: 2px;
+}
+/*Trabalhando com o corpo do documento*/
+main{
+    width: 800px;
+    margin: auto;
+    font-family: var(--font02);
+}
+main > div > #interior{
+    width: 100%;
+    height: 350px;
+    padding-top: 20px;
+}
+main > div > h2{
+    font-family: var(--font01);
+    font-size: 36px;
+    padding: 20px 10px;
+}
+main > div > p{
+    text-indent: 30px;
+    padding: 5px 10px 20px 10px;
+}
+main > div > #c1{
+    width: 200px;
+    display: inline-block;
+    padding: 0px 20px 10px 0px;
+    text-align: center;
+}
+main > div > div >.cafe{
+    width: 200px;
+    padding: 10px 20px 10px 0px;
+}
+main  .borda{
+    padding: 0px;
+    background-color: var(--cor3);
+    border: 2px solid var(--cor5);
+}
+main .comprar{
+    text-decoration: none;
+    color: var(--cor4);
+}
+main > div > div > p{
+    font-weight: bold;
+    padding: 2px 0px 10px 0px;
+}
+/*Trabalhando com o rodapé*/
+footer{
+    background-color: var(--cor3);
+    columns: 4;
+    padding: 10px 0px;
+    width: 100%;
+    margin: auto;
+}
+footer > div > h3{
+    font-size: 15px;
+    padding-left: 20px ;
+}
+footer > div > .rodape{
+    padding-left: 30px;
+}
+div > #copy{
+    background-color: var(--cor3);
+}
+
+/*Trabalhando com o media screen*/
+@media screen and (max-width:1020px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    header{
+        padding-bottom: 15%; 
+        min-width: 100%;
+    }
+    /*Trabalhando com o cabeçalho*/
+    header > div > p{
+        width: 350px;
+    }
+    header > div > #logomarca{
+        padding-left: 0px;
+    }
+    header > div > h1{
+        width: 300px;
+        padding: 40px 0px 0px 0px;
+    }
+  
+    /*Trabalhando com o menu*/
+    nav {
+        width: 440px;
+    }
+    a{
+        font-size: 12px;
+    }
+    nav > a:hover{
+        background-color: var(--cor2);
+        border-radius: 2px;
+    }
+    /*Trabalhando com o corpo do documento*/
+    main{
+        width: 380px;
+        margin: auto;
+        font-family: var(--font02);
+    }
+    main > div > .cafe{
+        width: 200px;
+        display: block;
+        float: auto;
+        padding: 0px 20px 10px 0px;
+    }
+    main > div > div > p{
+        text-align: center;
+        font-weight: bold;
+        padding: 2px 0px 10px 0px;
+    }
+    /*Trabalhando com o rodapé*/
+    footer{
+        columns: 1;
+        padding: 15px;
+        width: 400px;
+        margin: auto;
+    }
+    footer > div > p{
+        padding: 10px;
+    }
+}
