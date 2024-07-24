@@ -26,11 +26,11 @@ body{
 /*Trabalhando com o cabeçalho*/
 header{
     background-color: var(--cor3);
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 header > div > p{
     font-size: 24px;
-    width: 800px;
+    max-width: 800px;
     margin: auto;
 }
 header > div > #logomarca{
@@ -40,7 +40,7 @@ header > div > #logomarca{
 header > div > h1{
     font-family: var(--font01);
     font-size: 36px;
-    width: 800px;
+    max-width: 800px;
     padding: 40px 0px 0px 200px
 }
 /*Trabalhando com o menu*/
@@ -49,7 +49,7 @@ nav{
     padding: 0px 0px 5px 0px;
 }
 nav > a{
-    padding: 5px 15px;
+    padding: 1px 15px;
     color: var(--cor1);
     text-decoration: none;
     font-weight: normal;
@@ -60,13 +60,13 @@ nav > a:hover{
 }
 /*Trabalhando com o corpo do documento*/
 main{
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     font-family: var(--font02);
 }
 main > div > #interior{
     width: 100%;
-    height: 350px;
+    max-height: 350px;
     padding-top: 20px;
 }
 main > div > h2{
@@ -79,13 +79,13 @@ main > div > p{
     padding: 5px 10px 20px 10px;
 }
 main > div > #c1{
-    width: 200px;
+    max-width: 200px;
     display: inline-block;
     padding: 0px 20px 10px 0px;
     text-align: center;
 }
 main > div > div >.cafe{
-    width: 200px;
+    max-width: 200px;
     padding: 10px 20px 10px 0px;
 }
 main  .borda{
@@ -104,9 +104,9 @@ main > div > div > p{
 /*Trabalhando com o rodapé*/
 footer{
     background-color: var(--cor3);
-    columns: 4;
+    columns: 2;
     padding: 10px 0px;
-    width: 100%;
+    max-width: 100%;
     margin: auto;
 }
 footer > div > h3{
@@ -120,65 +120,25 @@ div > #copy{
     background-color: var(--cor3);
 }
 
-/*Trabalhando com o media screen*/
-@media screen and (max-width:1020px) {
-    *{
-        margin: 0px;
-        padding: 0px;
-        border: 0px;
-    }
-    header{
-        padding-bottom: 15%; 
-        min-width: 100%;
-    }
+@media screen and (max-width: 662px){
     /*Trabalhando com o cabeçalho*/
-    header > div > p{
-        width: 350px;
+    header{
+        padding-bottom: 15%;
     }
     header > div > #logomarca{
+        float: left;
         padding-left: 0px;
     }
     header > div > h1{
-        width: 300px;
-        padding: 40px 0px 0px 0px;
+        max-width: 200px;
+        padding: 40px 0px 0px 100px
     }
-  
     /*Trabalhando com o menu*/
-    nav {
-        width: 440px;
-    }
-    a{
-        font-size: 12px;
-    }
-    nav > a:hover{
-        background-color: var(--cor2);
-        border-radius: 2px;
-    }
-    /*Trabalhando com o corpo do documento*/
-    main{
-        width: 380px;
-        margin: auto;
-        font-family: var(--font02);
-    }
-    main > div > .cafe{
-        width: 200px;
-        display: block;
-        float: auto;
-        padding: 0px 20px 10px 0px;
-    }
-    main > div > div > p{
-        text-align: center;
-        font-weight: bold;
-        padding: 2px 0px 10px 0px;
+    nav > a{
+        padding: 3px 5px;
     }
     /*Trabalhando com o rodapé*/
     footer{
         columns: 1;
-        padding: 15px;
-        width: 400px;
-        margin: auto;
-    }
-    footer > div > p{
-        padding: 10px;
     }
 }
