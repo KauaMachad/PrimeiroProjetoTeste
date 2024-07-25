@@ -8,16 +8,16 @@
     --cor1: #F1F2E4;
     --cor2: #262401;
     --cor3: #A6978A;
-    --cor4: #401201;
+    --cor4: #40120198;
     --cor5: #260B01;
 }
 
+/*Trabalhando com o documento todo*/
 *{
     margin: 0px;
     padding: 0px;
     border: 0px;
 }
-/*Trabalhando com o documento todo*/
 body{
     background-color: var(--cor1);
     font-family: var(--font02);
@@ -26,119 +26,81 @@ body{
 /*Trabalhando com o cabeçalho*/
 header{
     background-color: var(--cor3);
-    padding-bottom: 5%;
 }
-header > div > p{
-    font-size: 24px;
-    max-width: 800px;
-    margin: auto;
-}
-header > div > #logomarca{
+header >#logomarca{
     float: left;
-    padding-left: 20px;
+    padding: 20px 0px 0px 30px;
 }
-header > div > h1{
+header > h1{
     font-family: var(--font01);
-    font-size: 36px;
-    max-width: 800px;
-    padding: 40px 0px 0px 200px
+    font-size: 3em;
+    padding: 35px 0px 40px 170px;
 }
 /*Trabalhando com o menu*/
 nav{
-    background-color: var(--cor3);
-    padding: 0px 0px 5px 0px;
+    padding: 5px 0px 5px 135px;
 }
 nav > a{
-    padding: 1px 15px;
+    font-size: 1.1em;
+    padding: 5px;
     color: var(--cor1);
     text-decoration: none;
-    font-weight: normal;
 }
 nav > a:hover{
     background-color: var(--cor2);
     border-radius: 2px;
+    text-decoration: underline;
 }
 /*Trabalhando com o corpo do documento*/
 main{
-    max-width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+div#cor_tras{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    max-width: 100%;
+    height: 86%;
     margin: auto;
-    font-family: var(--font02);
+    padding: 35px 0px 0px 20px;
 }
-main > div > #interior{
-    width: 100%;
-    max-height: 350px;
-    padding-top: 20px;
+div#fundo_img{
+    background-image: url('../imagens/Imagem_interior.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 250px;
 }
-main > div > h2{
+div#conteudo{
+    max-width: 500px;
+    margin: auto;
+    line-height: 30px;
+    font-size: 20px;
+}
+h2{
     font-family: var(--font01);
-    font-size: 36px;
-    padding: 20px 10px;
+    font-size: 2.5em;
+    padding-bottom: 30px;
 }
-main > div > p{
-    text-indent: 30px;
-    padding: 5px 10px 20px 10px;
-}
-main > div > #c1{
-    max-width: 200px;
+/*Trabalhando as folhas de estilo do conteúdo de venda*/
+div.imgcafe{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
     display: inline-block;
-    padding: 0px 20px 10px 0px;
-    text-align: center;
 }
-main > div > div >.cafe{
-    max-width: 200px;
-    padding: 10px 20px 10px 0px;
-}
-main  .borda{
-    padding: 0px;
-    background-color: var(--cor3);
-    border: 2px solid var(--cor5);
-}
-main .comprar{
-    text-decoration: none;
-    color: var(--cor4);
-}
-main > div > div > p{
-    font-weight: bold;
-    padding: 2px 0px 10px 0px;
-}
+
 /*Trabalhando com o rodapé*/
 footer{
     background-color: var(--cor3);
     columns: 2;
-    padding: 10px 0px;
-    max-width: 100%;
-    margin: auto;
-}
-footer > div > h3{
-    font-size: 15px;
-    padding-left: 20px ;
-}
-footer > div > .rodape{
-    padding-left: 30px;
-}
-div > #copy{
-    background-color: var(--cor3);
+    padding: 20px;
+    text-align: center;
+    line-height: 25px;
 }
 
-@media screen and (max-width: 662px){
-    /*Trabalhando com o cabeçalho*/
-    header{
-        padding-bottom: 15%;
-    }
-    header > div > #logomarca{
-        float: left;
-        padding-left: 0px;
-    }
-    header > div > h1{
-        max-width: 200px;
-        padding: 40px 0px 0px 100px
-    }
-    /*Trabalhando com o menu*/
-    nav > a{
-        padding: 3px 5px;
-    }
-    /*Trabalhando com o rodapé*/
-    footer{
-        columns: 1;
-    }
+div#copy{
+    background-color: var(--cor3);
+
 }
