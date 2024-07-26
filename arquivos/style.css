@@ -53,7 +53,7 @@ nav > a:hover{
 }
 /*Trabalhando com o corpo do documento*/
 section{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font02);
     text-align: justify;
 }
 div#cor_tras{
@@ -124,5 +124,46 @@ footer{
 
 div#copy{
     background-color: var(--cor3);
+
+}
+
+@media screen and (max-width: 600px) {
+
+    /*Trabalhando com o cabeçalho*/
+    header > h1{
+        font-size: 1.8em;
+        padding: 40px 0px 70px 150px;
+    }
+    /*Trabalhando com o menu*/
+    nav{
+        padding: 10px 0px 5px 10px;
+    }
+    nav > a{
+        font-size: 13px;
+    }
+    /*Trabalhando com o corpo do documento*/
+    div#cor_tras{
+        height: 88.5%;
+        padding: 35px 0px 0px 0px;
+    }
+    div#fundo_img{
+        height: 300px;
+    }
+    div#conteudo{
+        max-width: 400px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    h2{
+        font-family: var(--font01);
+        font-size: 2em;
+        padding-bottom: 30px;
+    }
+   
+    /*Trabalhando com o rodapé*/
+    footer{
+        columns: 1;
+        line-height: 30px;
+    }
 
 }
