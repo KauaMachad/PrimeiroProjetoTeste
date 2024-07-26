@@ -6,7 +6,7 @@
     --font01: "Dancing Script", "cursive";
     --font02: "Roboto", sans-serif;
     --cor1: #F1F2E4;
-    --cor2: #262401;
+    --cor2: #262401de;
     --cor3: #A6978A;
     --cor4: #40120198;
     --cor5: #260B01;
@@ -87,20 +87,31 @@ h2{
 main{
     max-width: 1000px;
     margin: auto;
-    padding: 30px 0px 20px 0px;
-}
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+}    
 .imgcafe{
     max-width: 200px;
-    height: 280px;
-    border: 2px solid var(--cor4);
+    height: 295px;
+    border: 5px solid var(--cor4);
     display: inline-block;
-    margin: auto;
+    margin: 12px;
+    padding: 5px;
+    line-height: 30px;
 }
 .imgcafe02{
     width: 200px;
-
 }
-
+.comprar{
+    text-decoration: none;
+    color: var(--cor5);
+    font-weight: bolder;
+    background-color: var(--cor2);
+    padding: 5px 61px;
+}
+.borda{
+    border-top: 2px solid var(--cor4);
+}
 
 /*Trabalhando com o rodapé*/
 footer{
