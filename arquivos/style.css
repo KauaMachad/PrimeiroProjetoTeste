@@ -38,7 +38,7 @@ header > h1{
 }
 /*Trabalhando com o menu*/
 nav{
-    padding: 5px 0px 5px 135px;
+    padding: 5px 0px 5px 151px;
 }
 nav > a{
     font-size: 1.1em;
@@ -50,6 +50,19 @@ nav > a:hover{
     background-color: var(--cor2);
     border-radius: 2px;
     text-decoration: underline;
+}
+section#logos{
+    position: absolute;
+    top: 5px;
+    right: -3px;
+}
+
+section#logos > a > img{
+    width: 81px;
+}
+img:hover{
+    border-radius: 100%;
+    border: 2px solid white;
 }
 /*Trabalhando com o corpo do documento*/
 section{
