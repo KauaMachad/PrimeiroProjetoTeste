@@ -148,6 +148,10 @@ footer{
     div#logos #whats{
         padding-bottom: 0px;
     }
+
+    div#logos  img:hover{
+        transform: translate(-1.5%, -1.5%);
+    }
 /*Trabalhando com o copyright*/
 div#copy{
     background-color: var(--cor3);
