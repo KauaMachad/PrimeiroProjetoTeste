@@ -51,19 +51,6 @@ nav > a:hover{
     border-radius: 2px;
     text-decoration: underline;
 }
-section#logos{
-    position: absolute;
-    top: 5px;
-    right: -3px;
-}
-
-section#logos > a > img{
-    width: 81px;
-}
-img:hover{
-    border-radius: 100%;
-    border: 2px solid white;
-}
 /*Trabalhando com o corpo do documento*/
 section{
     font-family: var(--font02);
@@ -127,17 +114,43 @@ main{
 }
 
 /*Trabalhando com o rodapé*/
+footer div#colunas{
+    columns: 2;
+    display: inline-block;
+    padding-top: 40px;
+    width: 800px;
+}
 footer{
     background-color: var(--cor3);
-    columns: 2;
-    padding: 20px;
+    padding: 20px 25px 35px 12px;
     text-align: center;
     line-height: 25px;
 }
+/*Trabalhando com as redes sociais*/
+    section#Tlogos{
+        background-color: var(--cor3);
+    }
+    div#logos{
+       float: right;
+       width: 20px;
+       padding-right: 20px;
+    }
+    div#logos #face{
+        max-width: 24px;
+        padding-bottom: 19px;
+    }
+    
+    div#logos img{
+        max-width: 43px;
+        padding-bottom: 19px;
+    }
 
+    div#logos #whats{
+        padding-bottom: 0px;
+    }
+/*Trabalhando com o copyright*/
 div#copy{
     background-color: var(--cor3);
-
 }
 
 @media screen and (max-width: 600px) {
@@ -172,11 +185,31 @@ div#copy{
         font-size: 2em;
         padding-bottom: 30px;
     }
-   
     /*Trabalhando com o rodapé*/
     footer{
+        padding: 20px 25px 60px 12px;
+    }
+    footer div#colunas{
         columns: 1;
         line-height: 30px;
+        width: 300px;
     }
-
+    /*Trabalhando com as redes sociais*/
+    div#logos{
+        float: center;
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: px;
+        padding-right: 270px;
+     }
+    div#logos #face{
+        padding-right: 80px;
+    }
+    div#logos img{
+        padding-right: 80px;
+    }
+/*Trabalhando com o copyright*/
+    div#copy p{
+        padding-top: 30px;
+    }
 }
