@@ -198,20 +198,6 @@ div#copy{
         line-height: 30px;
         width: 300px;
     }
-    /*Trabalhando com as redes sociais*/
-    div#logos{
-        float: center;
-        display: flex;
-        padding-top: 20px;
-        padding-bottom: px;
-        padding-right: 270px;
-     }
-    div#logos #face{
-        padding-right: 80px;
-    }
-    div#logos img{
-        padding-right: 80px;
-    }
 /*Trabalhando com o copyright*/
     div#copy p{
         padding-top: 30px;
